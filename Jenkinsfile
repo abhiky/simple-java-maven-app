@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'alpine:latest'
+    }
+
+  }
   stages {
     stage('googlecurl') {
       parallel {
@@ -22,7 +27,7 @@ pipeline {
     }
     stage('docker buld') {
       steps {
-        emailext(subject: 'heloo', body: 'how are u', from: 'abhi.steele@gmail.com', to: 'abhi.steele@gmail.com', replyTo: 'abhi.steele@gmail.com')
+        timestamps()
       }
     }
   }
