@@ -22,7 +22,7 @@ pipeline {
     }
     stage('docker buld') {
       steps {
-        emailext(subject: 'heloo', body: 'how are u', from: 'aky@aky.com', to: 'abhi.steele@gmail.com')
+        emailext(subject: 'heloo', body: 'how are u', from: 'abhi.steele@gmail.com', to: 'abhi.steele@gmail.com', replyTo: 'abhi.steele@gmail.com')
       }
     }
   }
