@@ -10,7 +10,7 @@ pipeline {
         }
         stage('githubcurl') {
           steps {
-            sh 'curl -k -v https://https://github.com/'
+            sh 'curl -k -v https://github.com/'
           }
         }
       }
