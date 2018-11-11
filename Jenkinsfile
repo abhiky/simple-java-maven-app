@@ -25,8 +25,5 @@ pipeline {
         echo 'hello'
       }
     }
-    stage('docker buld') {
-
-    }
   }
 }
