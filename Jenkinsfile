@@ -26,9 +26,7 @@ pipeline {
       }
     }
     stage('docker buld') {
-      steps {
-        timestamps()
-      }
+
     }
   }
 }
