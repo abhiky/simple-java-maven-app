@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'ubuntu:latest'
+      image 'registry.access.redhat.com/rhel7.4:latest'
     }
 
   }
